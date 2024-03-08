@@ -5,7 +5,8 @@ from pyrogram import Client
 
 load_dotenv()
 
-def create_app():
+
+def create_app() -> Client:
     return Client(
         'guibot',
         api_id=getenv('TELEGRAM_API_ID'),
